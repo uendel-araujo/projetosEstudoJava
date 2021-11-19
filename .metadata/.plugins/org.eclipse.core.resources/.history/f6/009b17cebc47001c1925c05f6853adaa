@@ -1,0 +1,26 @@
+package entities;
+
+public class Student {
+
+	public String name;
+	public double note1, note2, note3;
+	
+	public double finalGrade( ) {
+		validation();
+		return note1 + note2 + note3;
+	}
+	
+	/* MÉTODO PARA VALIDAR AS ENTRADAS DAS NOTAS NAS UNIDADE 1, 2 E 3 */
+	private void validation() {
+		if (note1 < 0 || note1 > 30) {
+			System.out.println("Please, type it a note between 0 and 30...");
+		}
+		if (note2 < 0 || note1 > 35) {
+			System.out.println("Please, type it a note between 0 and 35...");
+		}
+		if (note3 < 0 || note1 > 35) {
+			System.out.println("Please, type it a note between 0 and 35...");
+		}
+	}
+	
+}
